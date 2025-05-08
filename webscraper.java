@@ -30,11 +30,14 @@ public class webscraper {
             for (Element table : document.select("table.wikitable.grid")){
                 if (n <= 5 || n == 16){
                     //System.out.println(titleList[n]);
+
+                    //Validates weapon type
                     if (titleList[n].strip().equals("Primary")){                        
                         for (Element row : table.select("table.wikitable.grid tr"))
                         {
                             //System.out.println(titleList[n]);
                             final String weapon = row.select("a").text();
+                            //Removes annoying afterburn data
                             if (weapon.indexOf("Afterburn") >=0){
                                 System.out.println(weapon.substring(0,weapon.indexOf("Afterburn")));
                             }
@@ -42,8 +45,11 @@ public class webscraper {
                             {
                                 System.out.println(weapon);
                             }
+                            //Pulls data 
                             final String data = row.select("td").text();
                             //System.out.println(data);
+                            
+                            //Splits data by spaces and dashes
                             String[] nums = data.split("[-\\s]");
                             //System.out.println(nums.length);
                             // for (int i = 0; i < nums.length; i++)
@@ -51,6 +57,8 @@ public class webscraper {
                             //     System.out.println(i + " " + nums[i]);
 
                             // }
+
+                            //Shot calculations
                             if (nums.length > 4 && !nums[1].equals("(Afterburn)") && !nums[0].equals("(Afterburn)")){
                                 int damage = Integer.parseInt(nums[4]);
                                 //System.out.println(damage);
@@ -74,6 +82,7 @@ public class webscraper {
                 n++;
             }
 
+            
             for (Element row : document.select("table.wikitable.grid tr")){
                 
                 // if (n==0)
