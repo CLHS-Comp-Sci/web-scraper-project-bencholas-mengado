@@ -1,20 +1,25 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/L5GNwFiz)
 _Keep track of this ReadME file as you go. Delete this line when ready_ 
-# Insert Project Name
+# Bencholas Mengado
 ### 2025 CLHS Cybersecurity
-_Insert Student Names_
+_Ben Mendoza_ 
+
+_Nicholas Delgado_
 
 ## WebScraping and Web Cracking
-_define web scraping and web cracking here_
+Web scraping is the act of accessing a certain website from a computer's terminal to pull or upload data without a browser, such as price checking or ticket grabbing.
 
 ## Description
-_Insert project description Here_
+This project accesses the TF2 wiki page for weapons and print out how many shots it takes to kill a full health heavy (300 health).
 
 ## Use
-_Insert directions for how to use your project and any command line dependencies and arguments_
+Just run the file
 
 ## Sources
-_Insert and sources used for research here_
+[Youtube video](https://www.youtube.com/watch?v=tI1qGwhn_bs) \
+[Zenrows site](https://www.zenrows.com/blog/web-scraping-java#connect-to-target-website) \
+[GeeksForGeeks site](https://www.geeksforgeeks.org/web-scraping-in-java-with-jsoup/)
+
 
 ## Requirement Checklist
 _Feel free to add any checklist items below to best communicate with your group_
