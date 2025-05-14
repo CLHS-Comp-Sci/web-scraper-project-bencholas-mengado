@@ -39,4 +39,12 @@ _To mark a box as complete enter an X in between the brackets. See the first che
 - [ ] Works Cited
 
 ## Writeup
-_Copy Paste your write up here, just because it makes it look neat_
+We researched community made web scraper models. We started researching by looking through the Geeksforgeeks webpage on web scrapers and then began to watch YouTube videos. After this we decided that we would scrape the Team Fortress 2 wiki. Afterwards we began to code the scraper and input our code into the Github repository.\
+The goal of our project is to act as a web scraper for the Team Fortress 2 Wiki. We chose to do this because we wanted to make a web scraper for a Wikipedia page and be able to take information from a webpage. We also picked the Team Fortress 2 web page because Ben loves that game.\
+The website we are scraping is https://wiki.teamfortress.com. \
+The purpose of this website is to act as a forum for activities related to TF2 and show databases of game modes, trading, etc. and other information about the game.\
+We chose this website because it was more concise than Wikipedia itself and it showcases lots of information about the game.\
+The only library we used was JSOUP, which we used to pull the HTML code from the website.\
+One major challenge we faced was the inconsistency of the tables, which I worked around by only making the program read tables it could successfully process.
+
+
